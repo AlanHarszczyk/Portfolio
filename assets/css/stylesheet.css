@@ -95,11 +95,25 @@
     line-height: 1.5;
 }
 
+.container-2
+{   margin: 40px ;
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    height: 400px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact-section a 
 {
     float: left; /* Make sure that the links stay side-by-side */
     display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: white; /* White text color */
+    color: rgb(0, 0, 0); /* Black text color */
     text-align: center; /* Center the text */
     padding: 0px 20px; /* Add some padding */
     text-decoration: none; /* Remove underline */
@@ -113,7 +127,7 @@
 .contact-section a i 
 {
     font-size: 40px;
-    margin-right: 8px;
+   
 }
 
 /* Hover Effect */
@@ -129,6 +143,22 @@
     text-align: center;
     background: #3a3939;
 }
+
+
+
+
+/*projects page */
+.main-projects
+{
+    background-color:#d48787;
+    padding: 60px;
+}
+
+
+
+
+
+
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) 
