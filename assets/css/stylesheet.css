@@ -51,6 +51,27 @@
     padding: 60px;
 }
 
+/* Outer container holds both boxes in a row */
+.outer-container 
+{
+    display: flex; /* Enables Flexbox */
+    flex-direction: row; /* Ensures side-by-side layout */
+    justify-content: space-between; /* Spreads boxes apart */
+    align-items: center; /* Aligns items in the middle */
+    width: 80%;
+    margin: 50px auto; /* Centers the container */
+    gap: 20px; /* Adds spacing between the boxes */
+}
+
+/* Styling for both boxes */
+.box 
+{
+    flex: 1; /* Each box takes equal space */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
 .container 
 {
     display: flex;
@@ -172,6 +193,17 @@
     {
         flex-direction: column;
         height: auto;
+    }
+
+    .outer-container 
+    {
+        flex-direction: column; /* Stacks boxes on mobile */
+        align-items: center; /* Centers boxes */
+    }
+
+    .box 
+    {
+        width: 100%; /* Full width on mobile */
     }
 
     
