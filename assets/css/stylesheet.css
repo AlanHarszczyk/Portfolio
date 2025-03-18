@@ -1,38 +1,129 @@
-.header {
+.header 
+{
     padding: 80px; /* some padding */
     text-align: center; /* center the text */
-    background: #1abc9c; /* green background */
-    color: white; /* white text color */
-  }
+    background: #d44545; /* green background */
+    color: rgb(255, 255, 255); /* white text color */
+}
   
   /* Increase the font size of the <h1> element */
-  .header h1 {
+  .header h1 
+{
     font-size: 80px;
-  }
+}
 
   /* Style the top navigation bar */
-.navbar {
+.navbar 
+{
     overflow: hidden; /* Hide overflow */
     background-color: #3a3939; /* Dark background color */
-  }
+}
   
   /* Style the navigation bar links */
-  .navbar a {
+  .navbar a 
+{
     float: left; /* Make sure that the links stay side-by-side */
     display: block; /* Change the display to block, for responsive reasons (see below) */
     color: white; /* White text color */
     text-align: center; /* Center the text */
-    padding: 14px 20px; /* Add some padding */
+    padding: 20px 26px; /* Add some padding */
     text-decoration: none; /* Remove underline */
-  }
+}
   
   /* Right-aligned link */
-  .navbar a.right {
+  .navbar a.right 
+{
     float: right; /* Float a link to the right */
-  }
+}
   
   /* Change color on hover/mouse-over */
-  .navbar a:hover {
+  .navbar a:hover 
+{
     background-color: #ddd; /* Grey background color */
     color: black; /* Black text color */
-  }
+}
+
+ /*main info*/
+.main 
+{   
+    
+    background-color:#d48787;
+    padding: 60px;
+}
+
+.container 
+{
+    display: flex;
+    width: 100%;
+    max-width: 2500px;
+    height: 600px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.image-section 
+{
+    flex: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.text-section 
+{
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section h1 
+{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text-section p 
+{
+    font-size: 30px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer 
+{
+    padding: 40px;
+    text-align: center;
+    background: #3a3939;
+}
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) 
+{
+    .row 
+    {   
+      flex-direction: column;
+    }
+
+    .container
+    {
+        flex-direction: column;
+        height: auto;
+    }
+}
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) 
+{
+    .navbar a 
+    {
+      float: none;
+      width: 100%;
+    }
+}
