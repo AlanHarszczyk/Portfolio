@@ -5,7 +5,19 @@
     background: #d44545; /* green background */
     color: rgb(255, 255, 255); /* white text color */
 }
-  
+
+body
+{
+    padding: 0;
+    margin:0;
+}
+
+.pixel-text 
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
   /* Increase the font size of the <h1> element */
   .header h1 
 {
@@ -77,10 +89,10 @@
     display: flex;
     width: 100%;
     max-width: 2500px;
-    height: 600px;
+    height: 700px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 40px;
+    border-radius: 30px;
     overflow: hidden;
 }
 
@@ -88,7 +100,7 @@
 {
     flex: 1;
     object-fit: cover;
-    width: 100%;
+    width: 50%;
     height: 100%;
     
 }
@@ -111,23 +123,24 @@
 
 .text-section p 
 {
-    font-size: 30px;
+    font-size: 18px;
     color: #666;
     line-height: 1.5;
 }
 
 .container-2
-{   margin: 40px ;
+{   margin: 60px ;
     display: flex;
     width: 100%;
-    max-width: 250px;
-    height: 400px;
+    max-width: 500px;
+    height: 500px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden;
     flex-direction: column;
     align-items: center;
+    gap: 20px; /*adds gap between contact details*/
 }
 
 .contact-section a 
@@ -141,13 +154,13 @@
 }
 .contact h1
 {
-    font-size: 80px;
+    font-size: 40px;
 }
 
 
 .contact-section a i 
 {
-    font-size: 40px;
+    font-size: 20px;
    
 }
 
