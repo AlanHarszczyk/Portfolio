@@ -251,13 +251,60 @@ body
     display: flex;
     width: 100%;
     max-width: 2500px;
-    height: 700px;
+    height: auto;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     overflow: hidden;
     margin: 0 auto;
     margin-top: 30px;
+    text-align: center;
+}
+
+/* Grid container */
+.gif-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between items */
+    padding: 30px;
+    width: auto; /* Make grid container stretch full width */
+    max-width: auto; /* Optional: Limit maximum width for very large screens */
+    margin: 0 auto; /* Center the grid on large screens */
+}
+
+/* Individual grid items */
+.gif-item 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222; /* Optional: Dark background to contrast GIFs */
+    padding: 10px;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* Make GIFs responsive */
+.gif-item img 
+{
+    max-width: 100%; /* Ensures GIF scales properly */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.container-7
+{
+    display: flex;
+    width: 100%;
+    max-width: 2500px;
+    height: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
 }
 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -288,12 +335,26 @@ body
     
 }
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) 
+/* Ensure full screen width on large screens */
+@media screen and (min-width: 1200px) 
 {
-    .navbar a 
+    .gif-grid 
     {
-      float: none;
-      width: 100%;
+        grid-template-columns: repeat(8, 1fr); /* Stretch across large monitors */
+    }
+}
+
+/* Mobile view: Make it a single-column layout */
+@media screen and (max-width: 768px) 
+{
+    .gif-grid 
+    {
+        grid-template-columns: 1fr; /* Each GIF takes the full width */
+        justify-items: center; /* Center the GIFs in the grid */
+    }
+
+    .gif-item 
+    {
+        width: 100%; /* Ensure full width for each item */
     }
 }
