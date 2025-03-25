@@ -1,9 +1,11 @@
 .header 
 {
-    padding: 80px; /* some padding */
-    text-align: center; /* center the text */
-    background: #d44545; /* green background */
-    color: rgb(255, 255, 255); /* white text color */
+    padding: 80px; /* Default padding */
+    text-align: center; /* Center the text */
+    background: #d44545; /* Background color */
+    color: rgb(255, 255, 255); /* White text color */
+    width: 100%; /* Make sure it stretches across the screen */
+    box-sizing: border-box; /* Ensures padding doesn’t make it overflow */
 }
 
 body
@@ -310,6 +312,11 @@ body
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) 
 {
+
+    .header {
+        padding: 40px 20px; /* Reduce padding on smaller screens */
+    }
+
     .row 
     {   
       flex-direction: column;
@@ -332,6 +339,29 @@ body
         width: 100%; /* Full width on mobile */
     }
 
+    .container-2
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-3
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-4
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-5
+    {
+        flex-direction: column;
+        height: auto;
+    }
     
 }
   
