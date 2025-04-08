@@ -223,8 +223,8 @@ body
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     overflow: hidden;
-    margin: 0 auto;
-    margin-top: 0px;
+    margin: 30px auto 0 auto;
+
 }
 
 
@@ -238,8 +238,7 @@ body
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     overflow: hidden;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
 }
 
 .Project-2 
